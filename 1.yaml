@@ -1,22 +1,4 @@
 apiVersion: preql/1.0.0
-kind: CharacterSet
-metadata:
-  name: utf8
-spec:
-  name: utf8
-  targetEquivalents:
-    mysql: utf8
----
-apiVersion: preql/1.0.0
-kind: Collation
-metadata:
-  name: latin1csas
-spec:
-  name: latin1csas
-  targetEquivalents:
-    mysql: latin1_general_cs
----
-apiVersion: preql/1.0.0
 kind: DataType
 metadata:
   name: varchar64
