@@ -1,34 +1,4 @@
 apiVersion: preql/1.0.0
-kind: DataType
-metadata:
-  name: varchar64
-  labels:
-    学-中文.com/wut: 'apple'
-    blurpy-blurp.squizzle./bizzle: mynizzle
-spec:
-  jsonEquivalent: string
-  setters:
-    - type: trim
-      side: both
-    - type: case
-      casing: upper
-  targets:
-    mariadb:
-      nativeType: 'VARCHAR(64)'
----
-apiVersion: preql/1.0.0
-kind: DataType
-metadata:
-  name: pixelColor
-spec:
-  jsonEquivalent: string
-  name: pixelColor
-  values:
-    - 'R'
-    - 'G'
-    - 'B'
----
-apiVersion: preql/1.0.0
 kind: Database
 metadata:
   name: boofy
