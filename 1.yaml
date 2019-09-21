@@ -115,7 +115,6 @@ spec:
   structName: person
   databaseName: boofy
   type: varchar64
-  length: 4
   nullable: False
   default: Bob
 ---
